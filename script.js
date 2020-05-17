@@ -118,9 +118,6 @@ async function main() {
     getUserProfile()
     getContext()
     getFriendship()
-
-    alert(dataUser)
-
   } else{
     liff.login()
   }
