@@ -20,10 +20,10 @@
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
         console.log(profile.userId);
         if(profile.userId == "U1bc5e8b9661c28a9b92eccacc2f93817"){
-            alert("member")
+            window.location = "https://liff.line.me/1654201326-VyywNaoe"
         }
         else{
-            alert("no member")
+            window.location = "https://liff.line.me/1654201326-jJvpYEX2"
         }
       }
   
