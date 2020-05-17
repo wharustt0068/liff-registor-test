@@ -14,7 +14,7 @@
        
       }
       function show(){
-        console.log("asd")
+        console.log("Hello world!");
       }
   
       async function getFriendship() {
