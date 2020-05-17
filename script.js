@@ -15,6 +15,7 @@
       }
       function show(){
         console.log(userProfile);
+        console.log("aassbb");
       }
   
       async function getFriendship() {
