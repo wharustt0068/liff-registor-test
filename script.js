@@ -18,7 +18,7 @@
         const profile = await liff.getProfile()
         document.getElementById("userId").append(profile.userId)
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-        console.log(profile);
+        console.log("wow");
         console.log(profile.userId);
       }
   
