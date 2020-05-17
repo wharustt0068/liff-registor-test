@@ -4,10 +4,6 @@
         window.location.reload()
       }
   
-      function show(){
-        console.log(profile);
-      }
-  
       async function getFriendship() {
         const friend = await liff.getFriendship()
         document.getElementById("friendship").append(friend.friendFlag)
@@ -22,6 +18,8 @@
         const profile = await liff.getProfile()
         document.getElementById("userId").append(profile.userId)
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+        console.log(profile);
+        console.log(profile.userId);
       }
   
      
