@@ -19,6 +19,12 @@
         document.getElementById("userId").append(profile.userId)
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
         console.log(profile.userId);
+        if(profile.userId == "U1bc5e8b9661c28a9b92eccacc2f93817"){
+            alert("member")
+        }
+        else{
+            alert("no member")
+        }
       }
   
      
