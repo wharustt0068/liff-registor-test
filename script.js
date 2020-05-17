@@ -12,10 +12,8 @@
             err => console.error(err)
           );
        
-      }
-      function show(){
-          alert(userProfile)
-          alert(email)
+          console.log(userProfile)
+          console.log(email)
       }
   
       async function getFriendship() {
