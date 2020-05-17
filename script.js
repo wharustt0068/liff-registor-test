@@ -5,12 +5,9 @@
       }
   
       function check() {
-       // if(document.getElementById("userId").append(profile.userId) == "U1bc5e8b9661c28a9b92eccacc2f93817"){
-            alert(append(profile.userId))
-        //  }
-         // else{
-          //  alert("no")
-         // }
+       
+            alert(data)
+       
       }
   
       async function getFriendship() {
@@ -27,6 +24,7 @@
         const profile = await liff.getProfile()
         document.getElementById("userId").append(profile.userId)
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+        const data = profile.userId
       }
   
      
