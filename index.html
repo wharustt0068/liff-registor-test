@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>1</title>
+  <title>2</title>
   <link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
@@ -60,6 +60,12 @@
       if (liff.isLoggedIn()){
         getUserProfile()
         getFriendship()
+        if(document.getElementById("userId").append(profile.userId) == "U1bc5e8b9661c28a9b92eccacc2f93817"){
+          alert("yes")
+        }
+        else{
+          alert("no")
+        }
       } else{
         liff.login()
       }
