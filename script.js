@@ -113,16 +113,12 @@ async function main() {
   await liff.init({ liffId: "1654201326-312kXbD4" })
   document.getElementById("isLoggedIn").append(liff.isLoggedIn())
   if (liff.isLoggedIn()){
-    if(document.getElementById("userId").append(profile.userId) == U1bc5e8b9661c28a9b92eccacc2f93817){
+    
       getEnvironment()
       getUserProfile()
       getContext()
-      getFriendship()
-      window.location = ("user.html") 
-    } else {
-      window.location = ("registor.html") 
-    }
-    
+      getFriendship()    
+      
   } else{
     liff.login()
   }
