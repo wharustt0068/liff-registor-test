@@ -5,9 +5,17 @@
       }
   
       function check() {
+        liff.getProfile().then(profile => {
+            const userProfile = profile.userId;
+            const email = liff.getDecodedIDToken().email;
+          }).catch(
+            err => console.error(err)
+          );
        
-            alert(data)
-       
+      }
+      function show(){
+          alert(userProfile)
+          alert(email)
       }
   
       async function getFriendship() {
@@ -24,7 +32,6 @@
         const profile = await liff.getProfile()
         document.getElementById("userId").append(profile.userId)
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-        const data = profile.userId
       }
   
      
