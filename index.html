@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>2</title>
+  <title>3</title>
   <link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
@@ -14,6 +14,7 @@
   <p id="isLoggedIn"><b>isLoggedIn:</b> </p>
  
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
+  <button id="btnLogOut" onclick="check()">check</button>
 
 
   <script src="https://static.line-scdn.net/liff/edge/versions/2.1.13/sdk.js"></script>
@@ -27,6 +28,15 @@
 
     function closed() {
       liff.closeWindow()
+    }
+
+    function ckeck() {
+     // if(document.getElementById("userId").append(profile.userId) == "U1bc5e8b9661c28a9b92eccacc2f93817"){
+          alert("yes")
+      //  }
+       // else{
+        //  alert("no")
+       // }
     }
 
 
@@ -60,12 +70,6 @@
       if (liff.isLoggedIn()){
         getUserProfile()
         getFriendship()
-        if(document.getElementById("userId").append(profile.userId) == "U1bc5e8b9661c28a9b92eccacc2f93817"){
-          alert("yes")
-        }
-        else{
-          alert("no")
-        }
       } else{
         liff.login()
       }
