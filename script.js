@@ -12,8 +12,9 @@
             err => console.error(err)
           );
        
-          console.log(userProfile)
-          console.log(email)
+      }
+      function show(){
+        console.log("asd")
       }
   
       async function getFriendship() {
