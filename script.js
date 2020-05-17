@@ -88,7 +88,6 @@ async function getUserProfile() {
   const profile = await liff.getProfile()
   document.getElementById("pictureUrl").src = profile.pictureUrl
   document.getElementById("userId").append(profile.userId)
-  const dataUser = document.getElementById("userId").append(profile.userId)
   document.getElementById("statusMessage").append(profile.statusMessage)
   document.getElementById("displayName").append(profile.displayName)
   document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
@@ -118,9 +117,6 @@ async function main() {
     getUserProfile()
     getContext()
     getFriendship()
-
-    alert(dataUser)
-
   } else{
     liff.login()
   }
