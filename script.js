@@ -5,7 +5,7 @@
       }
   
       function show(){
-        console.log(data);
+        console.log(profile);
       }
   
       async function getFriendship() {
@@ -22,7 +22,6 @@
         const profile = await liff.getProfile()
         document.getElementById("userId").append(profile.userId)
         document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-        const data = profile.userId
       }
   
      
