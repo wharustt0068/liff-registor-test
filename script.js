@@ -119,7 +119,7 @@ async function main() {
     getContext()
     getFriendship()
 
-    alert("dataUser")
+    alert(dataUser)
 
   } else{
     liff.login()
