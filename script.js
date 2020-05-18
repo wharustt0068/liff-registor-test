@@ -1,17 +1,8 @@
 
-   function logOut() {
+    function logOut() {
         liff.logout()
         window.location.reload()
       }
-
-      async function load() {
-        let myObj = {
-          "user": [
-            { "userFId":"U1bc5e8b9661c28a9b92eccacc2f93817"},
-            { "name":"wasupon"},
-          ]
-         }
-    }
   
       async function getFriendship() {
         const friend = await liff.getFriendship()
@@ -28,7 +19,7 @@
        // document.getElementById("userId").append(profile.userId)
        // document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
         console.log(profile.userId);
-        if(profile.userId == myObj.user[0].userFId){
+        if(profile.userId == "U1bc5e8b9661c28a9b92eccacc2f93817"){
             window.location = "https://liff.line.me/1654201326-VyywNaoe"
         }
         else{
@@ -45,7 +36,7 @@
           getFriendship()
         } else{
           liff.login()
-       }
+        }
         // createUniversalLink()
       }
       main()
