@@ -12,13 +12,14 @@ async function getFriendship() {
   }
 }
 
-async function getUserProfile() {
+  async function getUserProfile() {
   const profile = await liff.getProfile()
-  $.getJSON('https://db-tester-waawwaw.000webhostapp.com/', function(data) {
-});
-  console.log(data.status)
   console.log(profile.userId);
-  if(data.status == "member"){
+  $.getJSON('https://db-tester-waawwaw.000webhostapp.com/', function(data) {
+    console.log(data.status)
+    let rddr = data.status
+  });
+  if(rddr == "member"){
       window.location = "https://liff.line.me/1654201326-VyywNaoe"
   }
   else{
