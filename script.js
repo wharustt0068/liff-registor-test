@@ -12,8 +12,6 @@
           ]
          }
     }
-    
-    load();
   
       async function getFriendship() {
         const friend = await liff.getFriendship()
