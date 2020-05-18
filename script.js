@@ -14,14 +14,11 @@ async function getFriendship() {
 
 async function getUserProfile() {
   const profile = await liff.getProfile()
-  let myObj = {
-      "userId_line": "U1bc5e8b9661c28a9b92eccacc2f93817",
-      "bank": "11223344",
-      "total": "1000"     
-      }
-
+  $.getJSON('https://db-tester-waawwaw.000webhostapp.com/', function(data) {
+});
+  console.log(data.status)
   console.log(profile.userId);
-  if(profile.userId == myObj.userId_line){
+  if(data.status == "member"){
       window.location = "https://liff.line.me/1654201326-VyywNaoe"
   }
   else{
