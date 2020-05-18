@@ -14,7 +14,7 @@ async function getFriendship() {
 
 async function getUserProfile() {
   const profile = await liff.getProfile()
-  $.getJSON('https://db-tester-waawwaw.000webhostapp.com/', function(data) {
+  $.getJSON('apimember/index.php', function(data) {
 });
   console.log(data.status)
   console.log(profile.userId);
